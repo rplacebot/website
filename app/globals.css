@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+canvas {
+border: none;
+  image-rendering: pixelated;
+}
+
+textarea::-webkit-scrollbar {
+  opacity: 0;
+}
+
+.colors::-webkit-scrollbar {
+  display:none
+}
+
+.transition-opacity {
+  animation: opacity 0.3s ease-in-out;
+  backdrop-filter: blur(11px);
+ 
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
